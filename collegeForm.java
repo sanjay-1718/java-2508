@@ -17,7 +17,7 @@ public class collegeForm {
         String citizenship = "Filipino";
         char civilStatus = 'S';
         char sex = 'M';
-        int contactNumber = 931895691;
+        long contactNumber = 9318956914l;
         String religion = "Christian";
         String spouseName = "";
         String spouseNumber = null;
@@ -25,11 +25,11 @@ public class collegeForm {
 
         String fatherName = "James Potter";
         String occupation = "Magician";
-        int FcontactNumber = 776211925;
+        long FcontactNumber = 7762119255l;
 
         String motherName = "Lily Potter";
         occupation = "Magician";
-        int McontactNumber = 698754925;
+        long McontactNumber = 6987549251l;
 
         System.out.println("Is First Year: " +isFirstYear);
         System.out.println("Is Transferee: " +isTransferee);
