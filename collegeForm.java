@@ -61,6 +61,5 @@ public class collegeForm {
         System.out.println('\n');
 
         System.out.println("*****************************************");
-
     }
 }
