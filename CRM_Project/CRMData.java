@@ -5,7 +5,7 @@ public class CRMData {
         int customerID = 238;
         String customerName = "Keshav";
         String customerEmail = "keshav123@gmail.com";
-        int customerPhone = 687459234;
+        long customerPhone = 6874592340l;
         String customerAddress = "Warangal";
         String customerType = "Business";
         String customerStatus = "Active";
@@ -25,7 +25,7 @@ public class CRMData {
         int leadID = 421;
         String leadName = "Mourya";
         String leadEmail = "mourya258@gmail.com";
-        int leadPhone = 856974123;
+        long leadPhone = 856974123l;
         String leadSourse = "Website";
         String leadStatus = "New";
         String creationDate = "01-03-2025";
