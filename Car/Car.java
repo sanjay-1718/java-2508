@@ -1,5 +1,7 @@
 package Car;
 
+import java.util.Scanner;
+
 public class Car {
     // Data of a car
     String carBrand;
@@ -29,7 +31,22 @@ public class Car {
     byte loanTenureYrs;
     int downPayment;
 
+
     public void displayCarEmi(){
+
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter Principle Amount: ");
+        principleAmount = sc.nextInt();
+
+        System.out.println("Enter Annual Intrest Rate: ");
+        annualIntrestRate = sc.nextDouble();
+
+        System.out.println("Enter Loan Tenure Years: ");
+        loanTenureYrs = sc.nextByte();
+
+        System.out.println("Enter Down Payment: ");
+        downPayment = sc.nextInt();
+
         double monthlyIntrestRate = (annualIntrestRate/12)/100;
         int totalMonths = loanTenureYrs*12;
         double emiIntrest = 1+monthlyIntrestRate;

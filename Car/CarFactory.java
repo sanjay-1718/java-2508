@@ -14,11 +14,7 @@ public class CarFactory {
 
         // EMI calculation for Mahindra Thar
         Car emi = new Car();
-        emi.principleAmount = 1607390;
-        emi.annualIntrestRate = 9.8;
-        emi.loanTenureYrs = 4;
-        emi.downPayment = 179000;
-
+        
         emi.displayCarEmi();
         
 
