@@ -53,5 +53,7 @@ public class LMS_gradeChecker {
         System.out.println("Average Score is: " +averageScore);
         System.out.println("Your Performance: " +performance);
         System.out.println("Your Attendance: " +attendanceStatus);
+
+        scanner.close();
     }
 }
