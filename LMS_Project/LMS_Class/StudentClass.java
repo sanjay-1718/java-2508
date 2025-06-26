@@ -11,7 +11,25 @@ public class StudentClass {
     int performanceCredits;
     int finalCredits;
     int trainerRatings;
-    
+    int studentMobileNumber;
+    int studentAge;
+
+    public StudentClass(){
+
+    }
+
+    public StudentClass(int studentID, String studentName){
+        this(101,"Sanjay",9999999,21);
+    }
+
+    // student complete details
+    public StudentClass(int studentID, String studentName, int studentMobileNumber, int studentAge){
+        this.studentID = studentID;
+        this.studentName = studentName;
+        this.studentMobileNumber = studentMobileNumber;
+        this.studentAge = studentAge;
+    }
+
 
     // display student info
     public void studentInfo() {
@@ -19,6 +37,15 @@ public class StudentClass {
         System.out.println("Student ID: "+studentID);
         System.out.println("Student NAME: "+studentName);
     }
+
+    public void studentCompleteInfo() {
+        System.out.println("===============STUDENT COMPLETE DETAILS===============");
+        System.out.println("Student ID: "+studentID);
+        System.out.println("Student NAME: "+studentName);
+        System.out.println("Student MOBILE NUMBER: "+studentMobileNumber);
+        System.out.println("Student AGE: "+studentAge);
+    }
+
 
     // Take Input
     Scanner sc = new Scanner(System.in);

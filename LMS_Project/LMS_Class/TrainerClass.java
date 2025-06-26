@@ -9,6 +9,14 @@ public class TrainerClass {
     int perSessionCost;
     int totalPayment;
 
+    public TrainerClass(){
+
+    }
+
+    public TrainerClass(int trainerID, String trainerName){
+        this.trainerID = trainerID;
+        this.trainerName = trainerName;
+    }
     // display trainer info
     public void trainerInfo() {
         System.out.println("===============TRAINER DETAILS===============");
