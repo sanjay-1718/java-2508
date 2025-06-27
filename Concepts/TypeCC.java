@@ -1,3 +1,4 @@
+package Concepts;
 public class TypeCC {
     public static void main(String[] args) {
         // Type Conversion small to big (Widening)

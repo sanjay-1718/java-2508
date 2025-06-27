@@ -1,3 +1,4 @@
+package Concepts;
 public class VariablesAssign {
     public static void main(String[] args) {
         String brand = "HIGHLANDER";

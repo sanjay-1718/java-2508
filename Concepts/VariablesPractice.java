@@ -1,3 +1,4 @@
+package Concepts;
 public class VariablesPractice {
     
     // static variables can be used without initialization

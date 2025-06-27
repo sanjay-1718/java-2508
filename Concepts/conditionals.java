@@ -1,3 +1,4 @@
+package Concepts;
 public class conditionals {
     public static void main(String[] args) {
         // if condition will only execute if the condition is true
