@@ -13,6 +13,9 @@ public class StudentClass {
     int trainerRatings;
     int studentMobileNumber;
     int studentAge;
+    
+    // Using arrays 
+    int [] subjectScores;
 
     public StudentClass(){
 
@@ -50,6 +53,21 @@ public class StudentClass {
     // Take Input
     Scanner sc = new Scanner(System.in);
 
+    public int calAvgScore(){
+        System.out.println("Enter no of Subjects: ");
+        int numOfSubs = sc.nextInt();
+        // initialization of array
+        subjectScores = new int[numOfSubs];
+        int totalScore = 0;
+        for(int i=0; i<subjectScores.length; i++){
+            System.out.println("Enter Score for subject: "+(i+1));
+            subjectScores[i] = sc.nextInt();
+            totalScore += subjectScores[i];
+        }
+        int avgScore = (totalScore)/subjectScores.length;
+        return avgScore;
+    }
+
     // calculate attendance credits based on sessions attended
     public int sessionsAttendedCredits(){
         System.out.println("Enter Number Of Sessions Attended");
@@ -67,10 +85,10 @@ public class StudentClass {
     }
 
     // calculate performance credits based on score 
-    public int performanceScoreCredits(int score){
-        if (score>=85) {
+    public int performanceScoreCredits(int avgScore){
+        if (avgScore>=85) {
             return performanceCredits+=5;
-        } else if(score>=60){
+        } else if(avgScore>=60){
             return performanceCredits+=3;
         } else {
             return performanceCredits+=0;
@@ -79,7 +97,8 @@ public class StudentClass {
 
     // calculate final achievement credits
     public String achievementStatus(){
-        finalCredits = attendanceCredits + performanceCredits;
+        int avgScore = calAvgScore();
+        finalCredits = sessionsAttendedCredits() + performanceScoreCredits(avgScore);
         if (finalCredits>=10) {
             return "GOLD";
         } else if (finalCredits>=8) {

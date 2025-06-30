@@ -8,9 +8,9 @@ public class LMSGradePaymentTracker {
 
         s1.studentInfo();
         s2.studentCompleteInfo();
-        System.out.println(s1.sessionsAttendedCredits());
+       // System.out.println(s1.sessionsAttendedCredits());
 
-        System.out.println(s1.performanceScoreCredits(90));
+        //System.out.println(s1.performanceScoreCredits(90));
 
         System.out.println(s1.achievementStatus());
 
